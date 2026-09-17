@@ -1,0 +1,16 @@
+node_modules
+.idea
+.DS_Store
+dist
+build
+coverage
+*.log
+*.env
+*.local
+*.cache
+*.tmp
+*.bak
+*.swp
+*.swo
+*.zip
+AGENTS.md
