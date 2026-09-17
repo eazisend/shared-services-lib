@@ -1,5 +1,5 @@
 {
-  "name": "@eazisend/lib",
+  "name": "@samuelaj1/eazisend-service-kit",
   "version": "1.0.0",
   "scripts": {
     "build": "tsup"
@@ -21,11 +21,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eazisend/backend"
+    "url": "git+https://github.com/samuelaj1/eazisend-service-kit"
   },
-  "homepage": "https://github.com/",
+  "homepage": "https://github.com/samuelaj1/eazisend-service-kit",
   "keywords": [],
-  "author": "eazisend",
+  "author": "samuelaj1",
   "license": "MIT",
   "type": "module",
   "devDependencies": {
