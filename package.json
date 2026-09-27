@@ -1,6 +1,6 @@
 {
   "name": "@samuelaj1/eazisend-service-kit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "build": "tsup"
   },
