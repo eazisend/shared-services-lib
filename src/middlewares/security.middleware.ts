@@ -4,7 +4,7 @@ import helmet from "helmet";
 import cors from "cors";
 import {libConfig} from "../config";
 
-export function enforceSecurityMiddleware(app: Express, args?: { origin?: string } ) {
+export function registerSecurityMiddleware(app: Express, args?: { origin?: string } ) {
     const { origin } = args ? args :  {};
     app.set("trust proxy", true);
     app.use(hpp());
