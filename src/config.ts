@@ -12,7 +12,7 @@ class Config {
     constructor() {
         this.API_GATEWAY_URL = process.env.API_GATEWAY_URL || '';
         this.GATEWAY_TOKEN = process.env.GATEWAY_TOKEN || '';
-        this.ELASTIC_SEARCH_NODE_URL = process.env.ELASTIC_SEARCH_NODE_URL || '';
+        this.ELASTIC_SEARCH_NODE_URL = process.env.ELASTIC_SEARCH_NODE_URL?.trim() || '';
         this.PORT = process.env.PORT || '';
     }
 }

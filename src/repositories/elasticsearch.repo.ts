@@ -6,10 +6,12 @@ import {LogLevelTypes} from "../types/log.level.types";
 /** Configured Elasticsearch cluster */
 class ElasticsearchRepo {
 
-    private elasticSearchClient: Client;
+    private elasticSearchClient?: Client;
 
     /** Creates an Elasticsearch client using the configured cluster URL. */
     constructor() {
+        if (!libConfig.ELASTIC_SEARCH_NODE_URL) return;
+
         this.elasticSearchClient = new Client({
             node: libConfig.ELASTIC_SEARCH_NODE_URL,
         })
@@ -17,6 +19,8 @@ class ElasticsearchRepo {
 
     /**  Elasticsearch connection is established. */
     public async establishElasticSearchConnection(args: { serviceName: string }) {
+        if (!this.elasticSearchClient) return;
+
         let isConnected = false;
         // Keep retrying until the cluster responds successfully.
         while (!isConnected) {

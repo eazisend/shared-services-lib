@@ -32,11 +32,13 @@ class LoggerRepo {
                 }
             }
         };
-        const esTransport: ElasticsearchTransport = new ElasticsearchTransport(options.elasticsearch);
         this.logger = winston.createLogger({
             exitOnError: false,
             defaultMeta: {service: identifier},
-            transports: [new winston.transports.Console(options.console), esTransport]
+            transports: [
+                new winston.transports.Console(options.console),
+                ...(elasticsearchNode ? [new ElasticsearchTransport(options.elasticsearch)] : [])
+            ]
         });
 
         return this;
