@@ -21,9 +21,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samuelaj1/eazisend-service-kit"
+    "url": "git+https://github.com/eazisend/shared-services-lib"
   },
-  "homepage": "https://github.com/samuelaj1/eazisend-service-kit",
+  "homepage": "https://github.com/eazisend/shared-services-lib",
   "keywords": [],
   "author": "samuelaj1",
   "license": "MIT",

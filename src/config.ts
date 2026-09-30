@@ -1,3 +1,8 @@
+import dotenv from 'dotenv';
+
+// Load the consuming service's .env before constructing shared clients.
+dotenv.config({ quiet: true });
+
 class Config {
     public readonly API_GATEWAY_URL: string;
     public readonly GATEWAY_TOKEN: string;
