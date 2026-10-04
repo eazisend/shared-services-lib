@@ -6,7 +6,7 @@ import {LogLevelTypes} from "../types/log.level.types";
 /** Configured Elasticsearch cluster */
 class ElasticsearchRepo {
 
-    private elasticSearchClient?: Client;
+    private readonly elasticSearchClient?: Client;
 
     /** Creates an Elasticsearch client using the configured cluster URL. */
     constructor() {
