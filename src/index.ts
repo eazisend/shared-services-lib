@@ -7,3 +7,4 @@ export * from "./repositories/elasticsearch.repo";
 export * from "./repositories/rabbitmq.repo";
 export * from "./middlewares/gateway.middleware";
 export * from "./middlewares/error.middleware";
+export * from "./middlewares/monitoring.middleware";
